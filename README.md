@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Basic setup in this module
+If you would like to do a basic setup in this module, please check these commands like below.
+
+`npx create-react-app json-parser --template typescript`
+
+`npm install @mui/icons-material`
+
+`npm install @tanstack/react-table`
+
+`npm install @emotion/react`
+
+`npm install @emotion/styled`
+
+`npm install @mui/styled-engine`
+
+## Customization
+If you would like to do a customization, please check these files like below.
+
+/src/App.tsx
+
+/src/json/data.json
+
 ## Available Scripts
 
 In the project directory, you can run:
