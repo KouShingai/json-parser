@@ -147,8 +147,8 @@ export const App = () => {
     ]);
   };
 
-  // globalFilterもある
-  // globalFilter特定の検索ワードが存在するかどうかでフィルター
+  // There is "globalFilter".
+  // "globalFilter" filters whether a specific search word exists or not.
   const COLUMNS: ColumnDef<any>[] = [
     {
       header: (props) => getCustomHeader("HostName", false, props),
