@@ -163,7 +163,7 @@ export const App = () => {
       filterFn: (row, id) => stringFilter(row, id)
     },
     {
-      header: (props) => getCustomHeader("最終更新日", false, props),
+      header: (props) => getCustomHeader("UpdateDate", false, props),
       accessorKey: "UpdateDate",
       cell: (props) => getCustomBody(props, "left", false),
       filterFn: (row, id) => dateAndNumberFilter(row, id)
