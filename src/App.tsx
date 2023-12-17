@@ -151,13 +151,13 @@ export const App = () => {
   // globalFilter特定の検索ワードが存在するかどうかでフィルター
   const COLUMNS: ColumnDef<any>[] = [
     {
-      header: (props) => getCustomHeader("ホスト名", false, props),
+      header: (props) => getCustomHeader("HostName", false, props),
       accessorKey: "HostName",
       cell: (props) => getCustomBody(props, "left", false),
       filterFn: (row, id) => stringFilter(row, id)
     },
     {
-      header: (props) => getCustomHeader("ソフトウェア名", false, props),
+      header: (props) => getCustomHeader("SoftwareName", false, props),
       accessorKey: "SoftwareName",
       cell: (props) => getCustomBody(props, "left", false),
       filterFn: (row, id) => stringFilter(row, id)
@@ -191,7 +191,7 @@ export const App = () => {
     <Box m={2}>
       <Box mt={2}>
         <TextField
-          label="ホスト名"
+          label="HostName"
           InputLabelProps={{ shrink: true }}
           variant="standard"
           value={
@@ -206,7 +206,7 @@ export const App = () => {
 
       <Box mt={2}>
         <TextField
-          label="ソフトウェア名"
+          label="SoftwareName"
           InputLabelProps={{ shrink: true }}
           variant="standard"
           value={
@@ -272,7 +272,7 @@ export const App = () => {
             })
           }
         >
-          前のページ
+          PrevPage
         </Button>
         <Select
           value={pageSetting.pageIndex}
@@ -300,7 +300,7 @@ export const App = () => {
             })
           }
         >
-          次のページ
+          NextPage
         </Button>
       </Box>
     </Box>
